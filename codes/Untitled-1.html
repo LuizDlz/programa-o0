@@ -1,0 +1,30 @@
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trap</title>
+</head>
+<body>
+    <button onclick="calcAn()">Cálculo do An</button>
+    <br>
+    <br>
+    <button onclick="calcA1()"> Cálculo do A1</button>
+    <br>
+    <br>
+    <button onclick="calcR()">Cálculo do R</button>
+    <br>
+    <br>
+    <button onclick="calcN()">Cálculo do N</button><br><br>
+    <input type="date">
+    <input type="email" placeholder="digite seu email">
+    <button><a href="https://www.youtube.com/watch?v=6jrUKth2-L4">Clique</a></button>
+</body>
+</html>
+<script>
+    function calcAn(){
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = Number(prompt("Digite o valor de r"));
+        var an = a1 + (n-1) * r;
+        msg = "o valor de PA é ("+an+")"
+        alert(msg);
+    }
